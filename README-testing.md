@@ -15,15 +15,34 @@ Releases will be represented by a tag in this ovos-releases repo.
 
 This will identify the exact commit in each submodule that will be used for that release.
 
-# Useful branches
+# OVOS individual repository branches
 
-There will be two types of branches in ovos-releases: release-candidate (rc/) and feature (feat/).
+Individual OVOS repos will have four types of branches: dev, testing, feat/*, WIP/*
+
+## dev
+Normal bug fixing and incremental work
+## testing
+Tracks dev as closely as possible. Conceptually when tests succeed. dev -> testing PR would be triggered by a human, and can include any number of PRs to dev (eg, feature + bug fixes introduced), once test in that PR pass and reviewers approve it becomes testing. This layer also gives more protection rules, like requiring 2 approvals for testing etc, while dev would not require approvals at all depending on the repo.
+## feat/*
+As described in ovos-releases
+## wip/*
+Known breaking development (eg API changes or collaboration branches).
+
+
+# ovos-releases branches
+
+
+There will be three types of branches in ovos-releases: release-candidate (rc/) and feature (feat/).
+
+## Alpha branch
+
+The alpha branch is the development branch for and will automatically be kept up-to-date with the dev branches of all submodules.
 
 ## Release branches : rc/$R
 
 The rc/$R branch is the development branch for working towards release $R and, post-release, for providing point-release updates.
 
-The rc/$R branch will automatically be kept up-to-date with the dev branches of all submodules.
+The rc/$R branch will automatically be kept up-to-date with the testing branches of all submodules.
 
 Release candidates (testing points) and releases are tagged on the rc/$R branch.
 
@@ -41,7 +60,7 @@ This will allow cross-repo pip version dependencies and API changes to be contai
 
 That feature branch is then added to all repos that need to be modified.
 
-Once work on the feature branch is complete (ie at least enough that it is accepted into general development) then it can be merged to rc/$R on ovos-releases and this process will merge the feature branches on all submodules to dev too (ie this could be automated). Alternatively the feature branches on all relevant submodules could be merged to dev and then they would automatically be picked up by rc/$R.
+Once work on the feature branch is complete (ie at least enough that it is accepted into general development) then it can be merged to rc/$R on ovos-releases and this process will merge the feature branches on all submodules to testing too (ie this could be automated). Alternatively the feature branches on all relevant submodules could be merged to testing and then they would automatically be picked up by rc/$R.
 
 Each feature should have a relevant issue in https://github.com/OpenVoiceOS/ovos-releases/issues to track activity and provide information about the feature. Then the developer can request a feature branch in ovos-releases on the issue. (Because Github doesn't allow a PR to a non-existant branch afaik).
 
@@ -68,7 +87,7 @@ First clone ovos-releases (you're probably doing that anyway)
    1. Commit with a suitable message
    1. Submit PR for ovos-releases
    
-   The last 3 steps should be automated when a PR is approved to any submodule dev branches. This automation should appropriately update all feature branches too
+   The last 3 steps should be automated when a PR is approved to any submodule testing branches. This automation should appropriately update all feature branches too
    
 1. Normal development on multiple repos (eg bug fix, distributed feature, pip dependency changes)
    1. Create an issue on ovos-releases for the feature. Note that this can be done at any time should the developer realise that multiple repos are impacted.
@@ -78,11 +97,11 @@ First clone ovos-releases (you're probably doing that anyway)
    1. Test and commit changes
    1. Submit PR to each submodule repo for the feat/$F branch
    1. PRs approved
-   1. Updated submodules in feat/$F ovos-releases. At this point all non-involved repos are on the 'dev' branch and involved repos are on the feat/$F branch.
+   1. Updated submodules in feat/$F ovos-releases. At this point all non-involved repos are on the 'testing' branch and involved repos are on the feat/$F branch.
    
    Could we automate on any PR to any submodule on branch == feat/$F
    
-   Note: submodule feature branches must be manually kept up-to-date (rebase etc) with submodule dev branches.
+   Note: submodule feature branches must be manually kept up-to-date (rebase etc) with submodule testing branches.
    
    Note: It would be tricky for normal users to test with multiple features at once as that's complex and would proably need a local merge of feature branches.
    

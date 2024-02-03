@@ -1,0 +1,141 @@
+[submodule "ovos-backend-client"]
+	path = ovos-backend-client
+	url = https://github.com/OpenVoiceOS/ovos-backend-client
+[submodule "ovos-core"]
+	path = ovos-core
+	url = https://github.com/OpenVoiceOS/ovos-core
+[submodule "ovos-audio"]
+	path = ovos-audio
+	url = https://github.com/OpenVoiceOS/ovos-audio
+[submodule "ovos-ocp-audio-plugin"]
+	path = ovos-ocp-audio-plugin
+	url = https://github.com/OpenVoiceOS/ovos-ocp-audio-plugin
+[submodule "ovos-messagebus"]
+	path = ovos-messagebus
+	url = https://github.com/OpenVoiceOS/ovos-messagebus
+[submodule "ovos-dinkum-listener"]
+	path = ovos-dinkum-listener
+	url = https://github.com/OpenVoiceOS/ovos-dinkum-listener
+[submodule "ovos-vad-plugin-silero"]
+	path = ovos-vad-plugin-silero
+	url = https://github.com/OpenVoiceOS/ovos-vad-plugin-silero
+[submodule "ovos-ww-plugin-pocketsphinx"]
+	path = ovos-ww-plugin-pocketsphinx
+	url = https://github.com/OpenVoiceOS/ovos-ww-plugin-pocketsphinx
+[submodule "ovos-audio-transformer-plugin-ggwave"]
+	path = ovos-audio-transformer-plugin-ggwave
+	url = https://github.com/OpenVoiceOS/ovos-audio-transformer-plugin-ggwave
+[submodule "ovos-ww-plugin-precise"]
+	path = ovos-ww-plugin-precise
+	url = https://github.com/OpenVoiceOS/ovos-ww-plugin-precise
+[submodule "ovos-ww-plugin-precise-lite"]
+	path = ovos-ww-plugin-precise-lite
+	url = https://github.com/OpenVoiceOS/ovos-ww-plugin-precise-lite
+[submodule "ovos-workshop"]
+	path = ovos-workshop
+	url = https://github.com/OpenVoiceOS/ovos-workshop
+[submodule "ovos-lingua-franca"]
+	path = ovos-lingua-franca
+	url = https://github.com/OpenVoiceOS/ovos-lingua-franca
+[submodule "ovos-vad-plugin-webrtcvad"]
+	path = ovos-vad-plugin-webrtcvad
+	url = https://github.com/OpenVoiceOS/ovos-vad-plugin-webrtcvad
+[submodule "ovos-microphone-plugin-sounddevice"]
+	path = ovos-microphone-plugin-sounddevice
+	url = https://github.com/OpenVoiceOS/ovos-microphone-plugin-sounddevice
+[submodule "ovos-stt-plugin-server"]
+	path = ovos-stt-plugin-server
+	url = https://github.com/OpenVoiceOS/ovos-stt-plugin-server
+[submodule "ovos-tts-plugin-mimic3-server"]
+	path = ovos-tts-plugin-mimic3-server
+	url = https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server
+[submodule "ovos-tts-plugin-mimic"]
+	path = ovos-tts-plugin-mimic
+	url = https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic
+[submodule "ovos-tts-plugin-piper"]
+	path = ovos-tts-plugin-piper
+	url = https://github.com/OpenVoiceOS/ovos-tts-plugin-piper
+[submodule "ovos-tts-server-plugin"]
+	path = ovos-tts-server-plugin
+	url = https://github.com/OpenVoiceOS/ovos-tts-server-plugin
+[submodule "ovos-config"]
+	path = ovos-config
+	url = https://github.com/OpenVoiceOS/ovos-config
+[submodule "ovos-utils"]
+	path = ovos-utils
+	url = https://github.com/OpenVoiceOS/ovos-utils
+[submodule "ovos-bus-client"]
+	path = ovos-bus-client
+	url = https://github.com/OpenVoiceOS/ovos-bus-client
+[submodule "ovos-plugin-manager"]
+	path = ovos-plugin-manager
+	url = https://github.com/OpenVoiceOS/ovos-plugin-manager
+[submodule "ovos-cli-client"]
+	path = ovos-cli-client
+	url = https://github.com/OpenVoiceOS/ovos-cli-client
+[submodule "ovos-PHAL"]
+	path = ovos-PHAL
+	url = https://github.com/OpenVoiceOS/ovos-PHAL
+[submodule "ovos-phal-plugin-connectivity-events"]
+	path = ovos-phal-plugin-connectivity-events
+	url = https://github.com/OpenVoiceOS/ovos-phal-plugin-connectivity-events
+[submodule "ovos-phal-plugin-system"]
+	path = ovos-phal-plugin-system
+	url = https://github.com/OpenVoiceOS/ovos-phal-plugin-system
+[submodule "ovos-PHAL-plugin-ipgeo"]
+	path = ovos-PHAL-plugin-ipgeo
+	url = https://github.com/OpenVoiceOS/ovos-PHAL-plugin-ipgeo
+[submodule "ovos-PHAL-plugin-oauth"]
+	path = ovos-PHAL-plugin-oauth
+	url = https://github.com/OpenVoiceOS/ovos-PHAL-plugin-oauth
+[submodule "ovos-phal-plugin-alsa"]
+	path = ovos-phal-plugin-alsa
+	url = https://github.com/OpenVoiceOS/ovos-phal-plugin-alsa
+[submodule "skill-ovos-volume"]
+	path = skill-ovos-volume
+	url = https://github.com/OpenVoiceOS/skill-ovos-volume
+[submodule "skill-ovos-fallback-unknown"]
+	path = skill-ovos-fallback-unknown
+	url = https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown
+[submodule "skill-ovos-stop"]
+	path = skill-ovos-stop
+	url = https://github.com/OpenVoiceOS/skill-ovos-stop
+[submodule "skill-alerts"]
+	path = skill-alerts
+	url = https://github.com/OpenVoiceOS/skill-alerts
+[submodule "skill-ovos-personal"]
+	path = skill-ovos-personal
+	url = https://github.com/OpenVoiceOS/skill-ovos-personal
+[submodule "skill-ovos-naptime"]
+	path = skill-ovos-naptime
+	url = https://github.com/OpenVoiceOS/skill-ovos-naptime
+[submodule "skill-ovos-date-time"]
+	path = skill-ovos-date-time
+	url = https://github.com/OpenVoiceOS/skill-ovos-date-time
+[submodule "skill-ovos-weather"]
+	path = skill-ovos-weather
+	url = https://github.com/OpenVoiceOS/skill-ovos-weather
+[submodule "skill-ovos-hello-world"]
+	path = skill-ovos-hello-world
+	url = https://github.com/OpenVoiceOS/skill-ovos-hello-world
+[submodule "skill-ovos-ddg"]
+	path = skill-ovos-ddg
+	url = https://github.com/OpenVoiceOS/skill-ovos-ddg
+[submodule "skill-ovos-wolfie"]
+	path = skill-ovos-wolfie
+	url = https://github.com/OpenVoiceOS/skill-ovos-wolfie
+[submodule "skill-ovos-wikipedia"]
+	path = skill-ovos-wikipedia
+	url = https://github.com/OpenVoiceOS/skill-ovos-wikipedia
+[submodule "skill-ovos-fallback-chatgpt"]
+	path = skill-ovos-fallback-chatgpt
+	url = https://github.com/OpenVoiceOS/skill-ovos-fallback-chatgpt
+[submodule "skill-ovos-news"]
+	path = skill-ovos-news
+	url = https://github.com/OpenVoiceOS/skill-ovos-news
+[submodule "skill-ovos-somafm"]
+	path = skill-ovos-somafm
+	url = https://github.com/OpenVoiceOS/skill-ovos-somafm
+[submodule "skill-ovos-youtube-music"]
+	path = skill-ovos-youtube-music
+	url = https://github.com/OpenVoiceOS/skill-ovos-youtube-music
