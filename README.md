@@ -119,5 +119,5 @@ pip install ovos-core[mycroft] --pre
 - **OVOS is modular**, and you can choose which components (extras) to install based on your needs.
 - **Stable Channel**: Bug fixes only (use `constraints-stable.txt`).
 - **Testing Channel**: Bug fixes and new features (use `constraints-testing.txt`).
-- **Alpha Channel**: Latest experimental features (use `--pre` and set `MYCROFT_LOOSE_REQUIREMENTS`).
+- **Alpha Channel**: Latest experimental features (use `--pre`).
 - Use the base command or customize your installation to fit your requirements by selecting only the necessary extras.
