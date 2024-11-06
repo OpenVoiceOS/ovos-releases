@@ -7,9 +7,9 @@ OVOS is a **modular** system, meaning that you don’t have to install all of it
 ## Table of Contents
 
 - [Distros](#distros)
+- [Release Channels](#release-channels)
 - [OVOS from Scratch](#ovos-from-scratch)
 - [What are OVOS Extras?](#what-are-ovos-extras)
-- [Release Channels](#release-channels)
 - [Installation Commands for Each Channel](#installation-commands-for-each-channel)
 - [Summary](#summary)
 
@@ -23,6 +23,23 @@ OVOS distros are projects that ship OVOS, but that are opinionated about which c
 
 These distros provide an easier way to get started with OVOS on specific hardware or platforms. The configurations come pre-set with commonly used services, making it quicker to deploy OVOS on different devices.
 
+### Release Channels
+
+OVOS follows [**semantic versioning**](https://semver.org/) (SemVer) and a **rolling release model** with three primary release channels: **stable**, **testing**, and **alpha**.
+
+These channels are managed via the [constraints files](https://pip.pypa.io/en/stable/user_guide/#constraints-files) hosted in this repository
+
+1. **Stable Channel**
+   - The **stable** release channel includes **only bug fixes**, no breaking changes or new features. It’s safe for general use.
+   - **Installation**: Use the `constraints-stable.txt` file to install the stable releases.
+
+2. **Testing Channel**
+   - The **testing** release channel includes **bug fixes and new features**, but it may not be as thoroughly tested as the stable releases.
+   - **Installation**: Use the `constraints-testing.txt` file to install the testing releases.
+
+3. **Alpha Channel**
+   - The **alpha** channel includes the latest experimental features that are **still in development**. These are not recommended for production use.
+   - **Installation**: Use the `--pre` flag and set the `MYCROFT_LOOSE_REQUIREMENTS` environment variable to install alpha releases.
 
 ### OVOS from scratch
 
@@ -68,23 +85,6 @@ pip install ovos-core[mycroft,plugins,skills-essential]
 
 This flexibility allows you to tailor the installation to your requirements, without unnecessary components.
 
-### Release Channels
-
-OVOS follows [**semantic versioning**](https://semver.org/) (SemVer) and a **rolling release model** with three primary release channels: **stable**, **testing**, and **alpha**.
-
-These channels are managed via the [constraints files](https://pip.pypa.io/en/stable/user_guide/#constraints-files) hosted in this repository
-
-1. **Stable Channel**
-   - The **stable** release channel includes **only bug fixes**, no breaking changes or new features. It’s safe for general use.
-   - **Installation**: Use the `constraints-stable.txt` file to install the stable releases.
-
-2. **Testing Channel**
-   - The **testing** release channel includes **bug fixes and new features**, but it may not be as thoroughly tested as the stable releases.
-   - **Installation**: Use the `constraints-testing.txt` file to install the testing releases.
-
-3. **Alpha Channel**
-   - The **alpha** channel includes the latest experimental features that are **still in development**. These are not recommended for production use.
-   - **Installation**: Use the `--pre` flag and set the `MYCROFT_LOOSE_REQUIREMENTS` environment variable to install alpha releases.
 
 ### Installation Commands for Each Channel
 
@@ -111,16 +111,6 @@ To install the latest alpha release with the desired extras, use:
 ```bash
 pip install ovos-core[mycroft] --pre
 ```
-
-**Force dependency resolution**
-
-In OVOS packages, the `setup.py` file includes a function that reads the requirements file (`requirements.txt`), removes comments and empty lines, and adjusts the version constraints if the `MYCROFT_LOOSE_REQUIREMENTS` environment variable is set. This helps make the dependencies more flexible, which is useful for the rolling release model.
-
-```bash
-MYCROFT_LOOSE_REQUIREMENTS=1 pip install ovos-core[mycroft] --pre
-```
-
-Make sure to set the `MYCROFT_LOOSE_REQUIREMENTS` environment variable for alpha releases, which can be done using the above command.
 
 ### Summary
 
