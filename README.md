@@ -1,6 +1,6 @@
 # OVOS Constraints and Release Channels
 
-OVOS is a **modular** system, meaning that you don’t have to install all of its components. Depending on your needs, you can install only the specific modules you want, saving both space and dependencies. The different components of OVOS are grouped into **extras**—optional feature sets that you can choose to install.
+OVOS is a **modular** system, meaning that you don’t have to install all of its components. Depending on your needs, you can install only the specific modules you want, saving both space and dependencies. The different components of OVOS are grouped into **extras** — optional feature sets that you can choose to install.
 
 ### What are OVOS Extras?
 
@@ -15,8 +15,6 @@ OVOS packages are divided into different **extras** that define the components y
 - **skills-internet**: Includes skills that require internet connection.
 - **skills-media**: Includes OCP skills (media playback).
 - **skills-desktop**: Includes desktop-related skills.
-
-### Base Installation Command
 
 For a **full installation** of OVOS with all the optional modules, you can use the following command:
 
@@ -36,18 +34,20 @@ This flexibility allows you to tailor the installation to your requirements, wit
 
 ### Release Channels
 
-OVOS follows **semantic versioning** (SemVer) and a **rolling release model** with three primary release channels: **stable**, **testing**, and **alpha**.
+OVOS follows [**semantic versioning**](https://semver.org/) (SemVer) and a **rolling release model** with three primary release channels: **stable**, **testing**, and **alpha**.
+
+These channels are managed via the [constraints files](https://pip.pypa.io/en/stable/user_guide/#constraints-files) hosted in this repository
 
 1. **Stable Channel**
-   - The **stable** release channel includes only bug fixes, no breaking changes or new features. It’s safe for general use.
+   - The **stable** release channel includes **only bug fixes**, no breaking changes or new features. It’s safe for general use.
    - **Installation**: Use the `constraints-stable.txt` file to install the stable releases.
 
 2. **Testing Channel**
-   - The **testing** release channel includes bug fixes and new features, but it may not be as thoroughly tested as the stable releases.
+   - The **testing** release channel includes **bug fixes and new features**, but it may not be as thoroughly tested as the stable releases.
    - **Installation**: Use the `constraints-testing.txt` file to install the testing releases.
 
 3. **Alpha Channel**
-   - The **alpha** channel includes the latest experimental features that are still in development. These are not recommended for production use.
+   - The **alpha** channel includes the latest experimental features that are **still in development**. These are not recommended for production use.
    - **Installation**: Use the `--pre` flag and set the `MYCROFT_LOOSE_REQUIREMENTS` environment variable to install alpha releases.
 
 ### Installation Commands for Each Channel
