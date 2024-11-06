@@ -32,6 +32,20 @@ pip install ovos-core[mycroft,plugins,skills-essential]
 
 This flexibility allows you to tailor the installation to your requirements, without unnecessary components.
 
+
+### OVOS from scratch
+
+Instead of using extras you can further costumize OVOS by manually installing only select services relevant to your use case
+
+- **[messagebus](https://github.com/OpenVoiceOS/ovos-messagebus)** - provides a communication layer between all services
+- **[core](https://github.com/OpenVoiceOS/ovos-core)** - handles anything related to skills
+- **[audio](https://github.com/OpenVoiceOS/ovos-audio)** - handles anything related to audio output (TTS, sounds, music...)
+- **[listener](https://github.com/OpenVoiceOS/ovos-dinkum-listener)** - handles anything related to audio input (WakeWord, VAD, STT...)
+- **[gui](https://github.com/OpenVoiceOS/ovos-gui)** - provides UI information for GUI client apps (eg, ovos-shell)
+- **[PHAL](https://github.com/OpenVoiceOS/ovos-PHAL)** - Platform/Hardware Abstraction Layer plugins
+
+For example, if you're setting up a Hivemind server, you can omit the audio stack to save resources.
+
 ### Release Channels
 
 OVOS follows [**semantic versioning**](https://semver.org/) (SemVer) and a **rolling release model** with three primary release channels: **stable**, **testing**, and **alpha**.
