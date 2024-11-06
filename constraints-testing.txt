@@ -4,13 +4,13 @@ ovos-audio-plugin-mpv<1.0.0
 ovos-audio-plugin-simple<1.0.0
 ovos-backend-client<2.0.0
 ovos-bidirectional-translation-plugin<1.0.0
-ovos-bus-client<1.0.0
+ovos-bus-client<2.0.0
 ovos-classifiers<1.0.0
 ovos-common-query-pipeline-plugin<2.0.0
 ovos-config<1.0.0
 ovos-core<1.0.0
 ovos-dinkum-listener<1.0.0
-ovos-gui<1.0.0
+ovos-gui<2.0.0
 ovos-gui-plugin-shell-companion<2.0.0
 ovos-lingua-franca<1.0.0
 ovos-media-plugin-chromecast<1.0.0
