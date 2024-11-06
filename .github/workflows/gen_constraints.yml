@@ -1,0 +1,45 @@
+name: Generate Constraints
+
+on:
+  workflow_dispatch:  # Allows manual triggering from the GitHub Actions tab
+
+jobs:
+  generate-constraints:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'  # Specify the Python version you need
+          
+      - name: Install System Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt install python3-dev swig libssl-dev libfann-dev portaudio19-dev libpulse-dev python3-fann2
+          python -m pip install build wheel
+          
+      - name: Install required packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install ovos-core[mycroft,lgpl,plugins,skills-essential,skills-audio,skills-gui,skills-internet,skills-media,skills-desktop]
+
+      - name: Run release script
+        run: |
+          python release.py
+
+      - name: Configure Git
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit generated constraints files
+        run: |
+          git add constraints-stable.txt constraints-testing.txt
+          git commit -m "Update constraints files"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
