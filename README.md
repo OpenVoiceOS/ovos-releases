@@ -29,6 +29,8 @@ OVOS follows [**semantic versioning**](https://semver.org/) (SemVer) and a **rol
 
 These channels are managed via the [constraints files](https://pip.pypa.io/en/stable/user_guide/#constraints-files) hosted in this repository
 
+> ℹ️ constraints files are similar to `requirements.txt`, but they specify *allowed versions* instead of *required versions*, packages in constraints files are not automatically installed
+
 1. **Stable Channel**
    - The **stable** release channel includes **only bug fixes**, no breaking changes or new features. It’s safe for general use.
    - **Installation**: Use the `constraints-stable.txt` file to install the stable releases.
@@ -39,7 +41,7 @@ These channels are managed via the [constraints files](https://pip.pypa.io/en/st
 
 3. **Alpha Channel**
    - The **alpha** channel includes the latest experimental features that are **still in development**. These are not recommended for production use.
-   - **Installation**: Use the `--pre` flag and set the `MYCROFT_LOOSE_REQUIREMENTS` environment variable to install alpha releases.
+   - **Installation**: Use the `--pre` flag to install alpha releases.
 
 ### OVOS from scratch
 
