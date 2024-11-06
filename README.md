@@ -2,6 +2,42 @@
 
 OVOS is a **modular** system, meaning that you don’t have to install all of its components. Depending on your needs, you can install only the specific modules you want, saving both space and dependencies. The different components of OVOS are grouped into **extras** — optional feature sets that you can choose to install.
 
+> ⚠️ this repository only enters in effect after the first [codename release](https://github.com/OpenVoiceOS/ovos-releases/issues/5), constraints files are a work in progress and subject to change
+
+## Table of Contents
+
+- [Distros](#distros)
+- [OVOS from Scratch](#ovos-from-scratch)
+- [What are OVOS Extras?](#what-are-ovos-extras)
+- [Release Channels](#release-channels)
+- [Installation Commands for Each Channel](#installation-commands-for-each-channel)
+- [Summary](#summary)
+
+### Distros
+
+OVOS distros are projects that ship OVOS, but that are opinionated about which components and skills should be available by default and pre-configured.
+
+- [**raspOVOS**](https://github.com/OpenVoiceOS/raspOVOS) - rasperry pi image
+- [**ovos-installer**](https://github.com/OpenVoiceOS/ovos-installer) - install OVOS on top of multiple OVOS
+- [**ovos-buildroot**](https://github.com/OpenVoiceOS/ovos-buildroot) - under development
+
+These distros provide an easier way to get started with OVOS on specific hardware or platforms. The configurations come pre-set with commonly used services, making it quicker to deploy OVOS on different devices.
+
+
+### OVOS from scratch
+
+Instead of using distros you can costumize OVOS by manually installing only select services relevant to your use case
+
+- **[messagebus](https://github.com/OpenVoiceOS/ovos-messagebus)** - provides a communication layer between all services
+- **[core](https://github.com/OpenVoiceOS/ovos-core)** - handles anything related to skills
+- **[audio](https://github.com/OpenVoiceOS/ovos-audio)** - handles anything related to audio output (TTS, sounds, music...)
+- **[listener](https://github.com/OpenVoiceOS/ovos-dinkum-listener)** - handles anything related to audio input (WakeWord, VAD, STT...)
+- **[gui](https://github.com/OpenVoiceOS/ovos-gui)** - provides UI information for GUI client apps (eg, ovos-shell)
+- **[PHAL](https://github.com/OpenVoiceOS/ovos-PHAL)** - Platform/Hardware Abstraction Layer plugins
+
+For example, if you're setting up a Hivemind server, you can omit the audio stack to save resources.
+
+
 ### What are OVOS Extras?
 
 OVOS packages are divided into different **extras** that define the components you wish to install. Each extra is a group of related functionality, and you can choose which ones to install based on your use case. For example:
@@ -31,20 +67,6 @@ pip install ovos-core[mycroft,plugins,skills-essential]
 ```
 
 This flexibility allows you to tailor the installation to your requirements, without unnecessary components.
-
-
-### OVOS from scratch
-
-Instead of using extras you can further costumize OVOS by manually installing only select services relevant to your use case
-
-- **[messagebus](https://github.com/OpenVoiceOS/ovos-messagebus)** - provides a communication layer between all services
-- **[core](https://github.com/OpenVoiceOS/ovos-core)** - handles anything related to skills
-- **[audio](https://github.com/OpenVoiceOS/ovos-audio)** - handles anything related to audio output (TTS, sounds, music...)
-- **[listener](https://github.com/OpenVoiceOS/ovos-dinkum-listener)** - handles anything related to audio input (WakeWord, VAD, STT...)
-- **[gui](https://github.com/OpenVoiceOS/ovos-gui)** - provides UI information for GUI client apps (eg, ovos-shell)
-- **[PHAL](https://github.com/OpenVoiceOS/ovos-PHAL)** - Platform/Hardware Abstraction Layer plugins
-
-For example, if you're setting up a Hivemind server, you can omit the audio stack to save resources.
 
 ### Release Channels
 
