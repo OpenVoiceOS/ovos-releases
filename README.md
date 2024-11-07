@@ -8,9 +8,9 @@ OVOS is a **modular** system, meaning that you don’t have to install all of it
 
 - [Distros](#distros)
 - [Release Channels](#release-channels)
+- [Installation Commands for Each Channel](#installation-commands-for-each-channel)
 - [OVOS from Scratch](#ovos-from-scratch)
 - [What are OVOS Extras?](#what-are-ovos-extras)
-- [Installation Commands for Each Channel](#installation-commands-for-each-channel)
 - [Summary](#summary)
 
 ### Distros
@@ -42,6 +42,34 @@ These channels are managed via the [constraints files](https://pip.pypa.io/en/st
 3. **Alpha Channel**
    - The **alpha** channel includes the latest experimental features that are **still in development**. These are not recommended for production use.
    - **Installation**: Use the `--pre` flag to install alpha releases.
+
+
+
+### Installation Commands for Each Channel
+
+#### Stable Release Installation
+
+To install the stable release with the desired extras, use:
+
+```bash
+pip install ovos-core[mycroft] -c constraints-stable.txt
+```
+
+#### Testing Release Installation
+
+To install the testing release with the desired extras, use:
+
+```bash
+pip install ovos-core[mycroft] -c constraints-testing.txt
+```
+
+#### Alpha Release Installation
+
+To install the latest alpha release with the desired extras, use:
+
+```bash
+pip install ovos-core[mycroft] --pre
+```
 
 ### OVOS from scratch
 
@@ -87,32 +115,6 @@ pip install ovos-core[mycroft,plugins,skills-essential]
 
 This flexibility allows you to tailor the installation to your requirements, without unnecessary components.
 
-
-### Installation Commands for Each Channel
-
-#### Stable Release Installation
-
-To install the stable release with the desired extras, use:
-
-```bash
-pip install ovos-core[mycroft] -c constraints-stable.txt
-```
-
-#### Testing Release Installation
-
-To install the testing release with the desired extras, use:
-
-```bash
-pip install ovos-core[mycroft] -c constraints-testing.txt
-```
-
-#### Alpha Release Installation
-
-To install the latest alpha release with the desired extras, use:
-
-```bash
-pip install ovos-core[mycroft] --pre
-```
 
 ### Summary
 
