@@ -9,6 +9,7 @@ ovos-classifiers<0.1.0
 ovos-common-query-pipeline-plugin<1.1.0
 ovos-config<0.5.0
 ovos-core<0.3.0
+ovos-date-parser<0.1.0
 ovos-dinkum-listener<0.4.0
 ovos-gui<1.1.0
 ovos-gui-plugin-shell-companion<1.1.0
