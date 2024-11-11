@@ -17,6 +17,7 @@ ovos-media-plugin-chromecast<1.0.0
 ovos-media-plugin-spotify<1.0.0
 ovos-messagebus<1.0.0
 ovos-microphone-plugin-sounddevice<1.0.0
+ovos-number-parser<1.0.0
 ovos-ocp-files-plugin<1.0.0
 ovos-ocp-m3u-plugin<1.0.0
 ovos-ocp-news-plugin<1.0.0
@@ -54,6 +55,7 @@ ovos-skill-weather<1.0.0
 ovos-skill-wikihow<1.0.0
 ovos-skill-wikipedia<1.0.0
 ovos-solver-openai-persona-plugin<1.0.0
+ovos-solver-yes-no-plugin<1.0.0
 ovos-stt-plugin-chromium<1.0.0
 ovos-stt-plugin-server<1.0.0
 ovos-stt-plugin-vosk<1.0.0
