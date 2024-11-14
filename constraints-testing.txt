@@ -13,7 +13,6 @@ ovos-date-parser<1.0.0
 ovos-dinkum-listener<1.0.0
 ovos-gui<2.0.0
 ovos-gui-plugin-shell-companion<2.0.0
-ovos-lingua-franca<1.0.0
 ovos-media-plugin-chromecast<1.0.0
 ovos-media-plugin-spotify<1.0.0
 ovos-messagebus<1.0.0
@@ -55,7 +54,7 @@ ovos-skill-volume<1.0.0
 ovos-skill-weather<1.0.0
 ovos-skill-wikihow<1.0.0
 ovos-skill-wikipedia<1.0.0
-ovos-solver-openai-persona-plugin<1.0.0
+ovos-solver-openai-persona-plugin<2.0.0
 ovos-solver-yes-no-plugin<1.0.0
 ovos-stt-plugin-chromium<1.0.0
 ovos-stt-plugin-server<1.0.0
