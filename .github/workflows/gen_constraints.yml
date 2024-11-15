@@ -27,6 +27,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install ovos-core[mycroft,lgpl,plugins,skills-essential,skills-audio,skills-gui,skills-internet,skills-media,skills-desktop]
           pip install ovos-PHAL[extras,linux,mk1,mk2]
+          pip install ovos-dinkum-listener[extras,linux,onnx]
 
       - name: Run release script
         run: |
