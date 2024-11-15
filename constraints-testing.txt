@@ -39,7 +39,7 @@ ovos-skill-date-time<1.0.0
 ovos-skill-dictation<1.0.0
 ovos-skill-fallback-unknown<1.0.0
 ovos-skill-hello-world<1.0.0
-ovos-skill-homescreen<2.0.0
+ovos-skill-homescreen<3.0.0
 ovos-skill-installer<1.0.0
 ovos-skill-ip<1.0.0
 ovos-skill-local-media<1.0.0

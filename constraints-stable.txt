@@ -9,7 +9,7 @@ ovos-classifiers<0.1.0
 ovos-common-query-pipeline-plugin<1.1.0
 ovos-config<0.5.0
 ovos-core<0.3.0
-ovos-date-parser<0.3.0
+ovos-date-parser<0.4.0
 ovos-dinkum-listener<0.4.0
 ovos-gui<1.1.0
 ovos-gui-plugin-shell-companion<1.1.0
@@ -39,7 +39,7 @@ ovos-skill-date-time<0.4.0
 ovos-skill-dictation<0.3.0
 ovos-skill-fallback-unknown<0.2.0
 ovos-skill-hello-world<0.2.0
-ovos-skill-homescreen<1.1.0
+ovos-skill-homescreen<2.1.0
 ovos-skill-installer<0.1.0
 ovos-skill-ip<0.3.0
 ovos-skill-local-media<0.3.0
@@ -66,6 +66,6 @@ ovos-utterance-corrections-plugin<0.1.0
 ovos-utterance-normalizer<0.3.0
 ovos-utterance-plugin-cancel<0.3.0
 ovos-vad-plugin-noise<0.2.0
-ovos-workshop<2.4.0
+ovos-workshop<2.5.0
 ovos-ww-plugin-precise-lite<0.2.0
 ovos-ww-plugin-vosk<0.2.0
