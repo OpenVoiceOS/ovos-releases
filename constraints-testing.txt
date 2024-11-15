@@ -13,6 +13,7 @@ ovos-date-parser<1.0.0
 ovos-dinkum-listener<1.0.0
 ovos-gui<2.0.0
 ovos-gui-plugin-shell-companion<2.0.0
+ovos-mark1-utils<1.0.0
 ovos-media-plugin-chromecast<1.0.0
 ovos-media-plugin-spotify<1.0.0
 ovos-messagebus<1.0.0
@@ -26,9 +27,17 @@ ovos-ocp-rss-plugin<1.0.0
 ovos-ocp-youtube-plugin<1.0.0
 ovos-padatious<2.0.0
 ovos-PHAL<1.0.0
+ovos-PHAL-plugin-alsa<1.0.0
+ovos-PHAL-plugin-balena-wifi<2.0.0
 ovos-phal-plugin-connectivity-events<1.0.0
+ovos-PHAL-plugin-hotkeys<1.0.0
 ovos-phal-plugin-ipgeo<1.0.0
+ovos-PHAL-plugin-mk1<1.0.0
+ovos-PHAL-plugin-network-manager<2.0.0
 ovos-PHAL-plugin-oauth<1.0.0
+ovos-PHAL-plugin-system<2.0.0
+ovos-PHAL-plugin-wallpaper-manager<1.0.0
+ovos-PHAL-plugin-wifi-setup<2.0.0
 ovos-plugin-common-play<2.0.0
 ovos-plugin-manager<1.0.0
 ovos-skill-alerts<1.0.0
