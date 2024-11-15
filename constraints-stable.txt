@@ -54,13 +54,15 @@ ovos-skill-hello-world<0.2.0
 ovos-skill-homescreen<2.1.0
 ovos-skill-installer<0.1.0
 ovos-skill-ip<0.3.0
+ovos-skill-iss-location<0.3.0
+ovos-skill-laugh<0.2.0
 ovos-skill-local-media<0.3.0
 ovos-skill-naptime<0.4.0
 ovos-skill-parrot<0.2.0
 ovos-skill-personal<0.2.0
 ovos-skill-pyradios<0.2.0
 ovos-skill-somafm<0.2.0
-ovos-skill-speedtest<0.3.0
+ovos-skill-speedtest<0.4.0
 ovos-skill-spelling<0.3.0
 ovos-skill-volume<0.2.0
 ovos-skill-weather<0.2.0

@@ -54,6 +54,8 @@ ovos-skill-hello-world<1.0.0
 ovos-skill-homescreen<3.0.0
 ovos-skill-installer<1.0.0
 ovos-skill-ip<1.0.0
+ovos-skill-iss-location<1.0.0
+ovos-skill-laugh<1.0.0
 ovos-skill-local-media<1.0.0
 ovos-skill-naptime<1.0.0
 ovos-skill-parrot<1.0.0
