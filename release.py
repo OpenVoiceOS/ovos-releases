@@ -15,12 +15,15 @@ for package in packages:
     match = pattern.match(package)
     if match:
         name, major, minor, patch, alpha = match.groups()
+        minver = f"{major}.{minor}.{patch}"
+        if alpha:
+            minver += f"a{alpha}"
         major = stable_major = int(major)
         minor = stable_minor = int(minor)
         patch = int(patch)
         print(package)
-        stable_constraints.append(f"{name}<{major}.{minor + 1}.0")
-        testing_constraints.append(f"{name}<{major+1}.0.0")
+        stable_constraints.append(f"{name}>={minver},<{major}.{minor + 1}.0")
+        testing_constraints.append(f"{name}>={minver},<{major+1}.0.0")
 
 # Write stable and testing constraints to respective files
 with open('constraints-stable.txt', 'w') as stable_file:
