@@ -45,6 +45,7 @@ ovos-skill-alerts<1.0.0
 ovos-skill-application-launcher<1.0.0
 ovos-skill-audio-recording<1.0.0
 ovos-skill-boot-finished<1.0.0
+ovos-skill-confucius-quotes<1.0.0
 ovos-skill-date-time<1.0.0
 ovos-skill-dictation<1.0.0
 ovos-skill-fallback-unknown<1.0.0
