@@ -24,6 +24,8 @@ for package in packages:
         print(package)
         if not alpha:
             stable_constraints.append(f"{name}>={minver},<{major}.{minor + 1}.0")
+        else:
+            stable_constraints.append(f"{name}<{major}.{minor + 1}.0")
         testing_constraints.append(f"{name}>={minver},<{major+1}.0.0")
 
 # Write stable and testing constraints to respective files
