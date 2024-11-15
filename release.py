@@ -22,7 +22,8 @@ for package in packages:
         minor = stable_minor = int(minor)
         patch = int(patch)
         print(package)
-        stable_constraints.append(f"{name}>={minver},<{major}.{minor + 1}.0")
+        if not alpha:
+            stable_constraints.append(f"{name}>={minver},<{major}.{minor + 1}.0")
         testing_constraints.append(f"{name}>={minver},<{major+1}.0.0")
 
 # Write stable and testing constraints to respective files
