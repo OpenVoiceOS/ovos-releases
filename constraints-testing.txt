@@ -17,6 +17,7 @@ ovos-mark1-utils<1.0.0
 ovos-media-plugin-chromecast<1.0.0
 ovos-media-plugin-spotify<1.0.0
 ovos-messagebus<1.0.0
+ovos-microphone-plugin-alsa<1.0.0
 ovos-microphone-plugin-sounddevice<1.0.0
 ovos-number-parser<1.0.0
 ovos-ocp-files-plugin<1.0.0
@@ -75,6 +76,8 @@ ovos-utterance-corrections-plugin<1.0.0
 ovos-utterance-normalizer<1.0.0
 ovos-utterance-plugin-cancel<1.0.0
 ovos-vad-plugin-noise<1.0.0
+ovos-vad-plugin-silero<1.0.0
 ovos-workshop<3.0.0
+ovos-ww-plugin-openwakeword<1.0.0
 ovos-ww-plugin-precise-lite<1.0.0
 ovos-ww-plugin-vosk<1.0.0
