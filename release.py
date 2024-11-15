@@ -17,7 +17,7 @@ for package in packages:
         name, major, minor, patch, alpha = match.groups()
         minver = f"{major}.{minor}.{patch}"
         if alpha:
-            minver += f"a{alpha}"
+            minver += f"{alpha}"
         major = stable_major = int(major)
         minor = stable_minor = int(minor)
         patch = int(patch)
