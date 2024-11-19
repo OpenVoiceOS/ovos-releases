@@ -38,7 +38,7 @@ jobs:
 
       - name: Commit generated constraints files
         run: |
-          git add constraints-stable.txt constraints-testing.txt
+          git add constraints-stable.txt constraints-testing.txt constraints-alpha.txt
           git commit -m "Update constraints files"
           git push
         env:
