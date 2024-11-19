@@ -7,6 +7,7 @@ packages = result.stdout.splitlines()
 
 stable_constraints = []
 testing_constraints = []
+alpha_constraints = []
 
 # Regular expression to capture package name and version, with optional alpha tag
 pattern = re.compile(r'^(ovos-[\w-]+)==(\d+)\.(\d+)\.(\d+)(a\d+)?$')
@@ -27,12 +28,16 @@ for package in packages:
         else:
             stable_constraints.append(f"{name}<{major}.{minor + 1}.0")
         testing_constraints.append(f"{name}>={minver},<{major+1}.0.0")
+        alpha_constraints.append(f"{name}>={minver}")
 
-# Write stable and testing constraints to respective files
+# Write stable, testing and alpha constraints to respective files
 with open('constraints-stable.txt', 'w') as stable_file:
     stable_file.write("\n".join(stable_constraints))
 
 with open('constraints-testing.txt', 'w') as testing_file:
     testing_file.write("\n".join(testing_constraints))
 
-print("Constraints files generated: constraints-stable.txt and constraints-testing.txt")
+with open('constraints-alpha.txt', 'w') as alpha_file:
+    alpha_file.write("\n".join(alpha_constraints))
+    
+print("Constraints files generated: constraints-stable.txt, constraints-testing.txt and constraints-alpha.txt")
