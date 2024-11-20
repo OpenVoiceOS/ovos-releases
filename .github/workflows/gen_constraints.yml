@@ -29,12 +29,6 @@ jobs:
       - name: Run release script
         run: |
           python release.py
-      - name: Install alpha packages
-        run: |
-          pip install ovos-core[mycroft,lgpl,plugins,skills-essential,skills-extra,skills-audio,skills-gui,skills-internet,skills-media,skills-desktop] ovos-PHAL[extras,linux,mk1,mk2] ovos-dinkum-listener[extras,linux,onnx] --pre -U
-      - name: Run alpha script
-        run: |
-          python release_alpha.py
 
       - name: Configure Git
         run: |
@@ -43,7 +37,7 @@ jobs:
 
       - name: Commit generated constraints files
         run: |
-          git add constraints-stable.txt constraints-testing.txt constraints-alpha.txt
+          git add constraints-stable.txt constraints-testing.txt
           git commit -m "Update constraints files"
           git push
         env:
