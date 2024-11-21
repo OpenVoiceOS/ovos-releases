@@ -2,7 +2,7 @@ ovos-adapt-parser>=1.0.5,<1.1.0
 ovos-audio>=0.3.1,<0.4.0
 ovos-audio-plugin-mpv>=0.2.1,<0.3.0
 ovos-audio-plugin-simple>=0.1.0,<0.2.0
-ovos-bidirectional-translation-plugin>=0.1.0,<0.2.0
+ovos-bidirectional-translation-plugin>=0.1.2,<0.2.0
 ovos-bus-client>=1.0.4,<1.1.0
 ovos-classifiers<0.1.0
 ovos-color-parser>=0.0.1,<0.1.0
@@ -81,7 +81,7 @@ ovos-stt-plugin-server>=0.0.6,<0.1.0
 ovos-stt-plugin-vosk>=0.2.3,<0.3.0
 ovos-translate-server-plugin>=0.0.2,<0.1.0
 ovos-tts-plugin-server>=0.0.2,<0.1.0
-ovos-utils>=0.5.0,<0.6.0
+ovos-utils<0.6.0
 ovos-utterance-corrections-plugin>=0.0.2,<0.1.0
 ovos-utterance-normalizer>=0.2.1,<0.3.0
 ovos-utterance-plugin-cancel>=0.2.2,<0.3.0
