@@ -22,11 +22,11 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt install python3-dev swig libssl-dev libfann-dev portaudio19-dev libpulse-dev python3-fann2
-          python -m pip install build wheel
+          python -m pip install build wheel uv
 
       - name: Install alpha packages
         run: |
-          pip install ovos-core[mycroft,lgpl,plugins,skills-essential,skills-extra,skills-audio,skills-gui,skills-internet,skills-media,skills-desktop] ovos-PHAL[extras,linux,mk1,mk2] ovos-dinkum-listener[extras,linux,onnx] --pre
+          uv pip install --system ovos-core[mycroft,lgpl,plugins,skills-essential,skills-extra,skills-audio,skills-gui,skills-internet,skills-media,skills-desktop] ovos-PHAL[extras,linux,mk1,mk2] ovos-dinkum-listener[extras,linux,onnx] --pre
 
       - name: Run alpha script
         run: |
