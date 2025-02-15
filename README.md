@@ -18,7 +18,7 @@ OVOS is a **modular** system, meaning that you don’t have to install all of it
 OVOS distros are projects that ship OVOS, but that are opinionated about which components and skills should be available by default and pre-configured.
 
 - [**raspOVOS**](https://github.com/OpenVoiceOS/raspOVOS) - rasperry pi image
-- [**ovos-installer**](https://github.com/OpenVoiceOS/ovos-installer) - install OVOS on top of multiple OVOS
+- [**ovos-installer**](https://github.com/OpenVoiceOS/ovos-installer) - install OVOS on top of multiple OS
 - [**ovos-buildroot**](https://github.com/OpenVoiceOS/ovos-buildroot) - under development
 
 These distros provide an easier way to get started with OVOS on specific hardware or platforms. The configurations come pre-set with commonly used services, making it quicker to deploy OVOS on different devices.
