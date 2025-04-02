@@ -9,10 +9,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10'  # Specify the Python version you need
           
@@ -37,7 +37,7 @@ jobs:
 
       - name: Commit generated constraints files
         run: |
-          git add constraints-stable.txt constraints-testing.txt
+          git add constraints-stable.txt
           git commit -m "Update constraints files"
           git push
         env:
