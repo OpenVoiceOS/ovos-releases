@@ -6,9 +6,7 @@ result = subprocess.run(['pip', 'list', '--format=freeze'], capture_output=True,
 packages = result.stdout.splitlines()
 
 
-testing_constraints = [
-    "onnxruntime<=1.20.1"  # 1.21.0 breaks raspberry pi
-]
+testing_constraints = []
 
 # Regular expression to capture package name and version, with optional alpha tag
 pattern = re.compile(r'^(ovos-[\w-]+)==(\d+)\.(\d+)\.(\d+)(a\d+)?$')
