@@ -6,10 +6,7 @@ result = subprocess.run(['pip', 'list', '--format=freeze'], capture_output=True,
 packages = result.stdout.splitlines()
 
 stable_constraints = [
-    "onnxruntime==1.20.1"  # 1.21.0 breaks raspberry pi
-]
-testing_constraints = [
-    "onnxruntime==1.20.1"  # 1.21.0 breaks raspberry pi
+    "onnxruntime<=1.20.1"  # 1.21.0 breaks raspberry pi
 ]
 
 # Regular expression to capture package name and version, with optional alpha tag
@@ -30,13 +27,10 @@ for package in packages:
             stable_constraints.append(f"{name}>={minver},<{major}.{minor + 1}.0")
         else:
             stable_constraints.append(f"{name}<{major}.{minor + 1}.0")
-        testing_constraints.append(f"{name}>={minver},<{major+1}.0.0")
 
 # Write stable, testing and alpha constraints to respective files
 with open('constraints-stable.txt', 'w') as stable_file:
     stable_file.write("\n".join(stable_constraints))
 
-with open('constraints-testing.txt', 'w') as testing_file:
-    testing_file.write("\n".join(testing_constraints))
     
-print("Constraints files generated: constraints-stable.txt and constraints-testing.txt")
+print("Constraints files generated: constraints-stable.txt")
