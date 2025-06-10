@@ -26,7 +26,7 @@ jobs:
 
       - name: Install alpha packages
         run: |
-          uv pip install --system ovos-core[mycroft,lgpl,plugins,skills-essential,skills-extra,skills-audio,skills-gui,skills-internet,skills-media,skills-desktop,skills-ca,skills-en,skills-pt] ovos-PHAL[extras,mk1,mk2] ovos-dinkum-listener[extras,linux,onnx] --pre
+          uv pip install --system ovos-core[mycroft,lgpl,plugins,skills-essential,skills-extra,skills-audio,skills-gui,skills-internet,skills-media,skills-desktop,skills-ca,skills-en,skills-pt] ovos-PHAL[extras,linux,mk1,mk2] ovos-dinkum-listener[extras,linux,onnx] --pre  -c https://raw.githubusercontent.com/OpenVoiceOS/ovos-releases/refs/heads/main/constraints-alpha.txt
 
       - name: Run alpha script
         run: |
