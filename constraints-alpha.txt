@@ -108,4 +108,4 @@ ovos-workshop>=7.0.6
 ovos-ww-plugin-openwakeword>=0.4.1
 ovos-ww-plugin-precise-lite>=0.1.6
 ovos-ww-plugin-vosk>=0.1.7
-ovos-yaml-editor>=0.0.2
+ovos-yaml-editor>=0.0.3a1
