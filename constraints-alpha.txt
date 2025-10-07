@@ -1,5 +1,5 @@
 ovos-adapt-parser>=1.0.8
-ovos-audio>=1.0.2a2
+ovos-audio>=1.1.0a1
 ovos-audio-plugin-mpv>=0.2.1
 ovos-audio-plugin-simple>=0.1.2
 ovos-bidirectional-translation-plugin>=0.1.2
