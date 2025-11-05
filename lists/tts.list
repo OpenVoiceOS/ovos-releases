@@ -10,7 +10,7 @@ ovos-tts-plugin-coqui
 ovos-tts-plugin-mimic
 ovos-tts-plugin-google-tx
 ovos-tts-plugin-pico
-ovos-tts-plugin-SAM
+#ovos-tts-plugin-SAM
 ovos-tts-plugin-beepspeak
 ovos-tts-plugin-espeakNG
 #ovos-tts-plugin-marytts
