@@ -1,0 +1,17 @@
+ovos-core
+ovos-audio
+ovos-dinkum-listener
+ovos-messagebus
+ovos-PHAL
+ovos-gui
+ovos-plugin-manager
+ovos-workshop
+ovos-utils
+ovos-config
+ovos_bus_client
+ovos-number-parser
+ovos-date-parser
+ovos-color-parser
+ovos-lang-parser
+ovos-yaml-editor
+ovoscope
