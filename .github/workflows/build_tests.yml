@@ -23,7 +23,6 @@ jobs:
           python -m pip install build wheel uv
 
       - name: Install alpha packages
-        continue-on-error: true
         run: |
           uv pip install --system --pre \
             -r lists/core.list \
