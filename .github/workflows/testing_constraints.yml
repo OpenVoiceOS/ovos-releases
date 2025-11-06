@@ -1,4 +1,4 @@
-name: Generate Constraints
+name: Generate Testing Constraints
 
 on:
   workflow_dispatch:  # Allows manual triggering from the GitHub Actions tab

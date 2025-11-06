@@ -1,4 +1,4 @@
-name: Generate Constraints
+name: Generate Stable Constraints
 
 on:
   workflow_dispatch:  # Allows manual triggering from the GitHub Actions tab
@@ -24,8 +24,26 @@ jobs:
           
       - name: Install required packages
         run: |
-          python -m pip install --upgrade pip
-          uv pip install --system ovos-core[mycroft,lgpl,plugins,skills-essential,skills-extra,skills-audio,skills-gui,skills-internet,skills-media,skills-desktop] ovos-PHAL[extras,linux,mk1,mk2] ovos-dinkum-listener[extras,linux,onnx]
+          uv pip install --system \
+          -r lists/core.list \
+          -r lists/dialog_transf.list  \
+          -r lists/intent_transf.list  \
+          -r lists/media.list  \
+          -r lists/mic.list  \
+          -r lists/ocp.list  \
+          -r lists/phal.list  \
+          -r lists/pipeline.list  \
+          -r lists/skills.list  \
+          -r lists/stt.list  \
+          -r lists/translate.list  \
+          -r lists/tts.list  \
+          -r lists/tts_transf.list  \
+          -r lists/utterance_transf.list  \
+          -r lists/vad.list  \
+          -r lists/ww.list \
+          -r lists/audio_transf.list \
+          -r lists/gui.list 
+
       - name: Run release script
         run: |
           python release.py
