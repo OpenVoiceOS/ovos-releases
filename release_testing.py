@@ -9,7 +9,7 @@ packages = result.stdout.splitlines()
 testing_constraints = []
 
 # Regular expression to capture package name and version, with optional alpha tag
-pattern = re.compile(r'^(ovos-[\w-]+)==(\d+)\.(\d+)\.(\d+)(a\d+)?$')
+pattern = re.compile(r'^(ovos[\w-]+)==(\d+)\.(\d+)\.(\d+)(a\d+)?$')
 
 for package in packages:
     match = pattern.match(package)
