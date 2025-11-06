@@ -1,12 +1,13 @@
-ovos-core
-ovos-audio
-ovos-dinkum-listener
-ovos-messagebus
-ovos-PHAL
-ovos-gui
-ovos-plugin-manager
-ovos-workshop
-ovos-utils
+# minimum versions just to help version resolution workflow, avoid checking old versions
+ovos_core>=2.1.0
+ovos_audio>=1.0.0
+ovos-dinkum-listener>=0.5.0
+ovos-messagebus>=0.0.10
+ovos-PHAL>=0.2.0
+ovos-gui>=1.3.0
+ovos-plugin-manager>=1.0.0
+ovos-workshop>=7.0.0
+ovos-utils>=0.8.0
 ovos-config
 ovos_bus_client
 ovos-number-parser
