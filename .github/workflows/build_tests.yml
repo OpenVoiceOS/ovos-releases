@@ -1,0 +1,46 @@
+name: Run Build Tests
+on:
+  workflow_dispatch:
+
+jobs:
+  build_tests:
+    strategy:
+      max-parallel: 4
+      matrix:
+        python-version: ["3.10", "3.11", "3.12", "3.13"]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install System Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt install python3-dev swig libssl-dev libfann-dev portaudio19-dev libpulse-dev python3-fann2
+          python -m pip install build wheel uv
+
+      - name: Install alpha packages
+        run: |
+          uv pip install --system --pre \
+            -r lists/core.list \
+            -r lists/dialog_transf.list  \
+            -r lists/intent_transf.list  \
+            -r lists/media.list  \
+            -r lists/mic.list  \
+            -r lists/ocp.list  \
+            -r lists/phal.list  \
+            -r lists/pipeline.list  \
+            -r lists/skills.list  \
+            -r lists/stt.list  \
+            -r lists/translate.list  \
+            -r lists/tts.list  \
+            -r lists/tts_transf.list  \
+            -r lists/utterance_transf.list  \
+            -r lists/vad.list  \
+            -r lists/ww.list \
+            -r lists/audio_transf.list \
+            -r lists/gui.list \
+            -c https://raw.githubusercontent.com/OpenVoiceOS/ovos-releases/refs/heads/main/constraints-alpha.txt
