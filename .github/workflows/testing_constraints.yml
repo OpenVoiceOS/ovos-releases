@@ -44,6 +44,7 @@ jobs:
           -r lists/keywords.list \
           -r lists/audio_transf.list \
           -r lists/embeddings.list \
+          -r lists/solvers.list \
           -r lists/gui.list 
 
       - name: Run release script

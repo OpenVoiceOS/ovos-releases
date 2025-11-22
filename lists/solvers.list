@@ -1,0 +1,9 @@
+ovos-wikipedia-solver
+ovos-wolfram-alpha-solver
+ovos-solver-bm25-plugin
+ovos-solver-yes-no-plugin
+ovos_solver_failure_plugin
+ovos-solver-aiml-plugin
+ovos-solver-rivescript-plugin
+ovos-solver-gguf-plugin
+ovos-flashrank-reranker-plugin
