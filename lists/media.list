@@ -1,5 +1,10 @@
 ovos_audio_plugin_simple
 ovos-audio-plugin-mpv
+ovos_plugin_vlc
+ovos-media-plugin-qt5
+ovos-media-plugin-vlc
+ovos-media-plugin-simple
+ovos-media-plugin-mplayer
 ovos-media-plugin-spotify
 ovos-media-plugin-chromecast
 ovos_plugin_common_play

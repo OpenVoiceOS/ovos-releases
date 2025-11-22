@@ -41,7 +41,9 @@ jobs:
           -r lists/utterance_transf.list  \
           -r lists/vad.list  \
           -r lists/ww.list \
+          -r lists/keywords.list \
           -r lists/audio_transf.list \
+          -r embeddings.list \
           -r lists/gui.list 
 
       - name: Run release script

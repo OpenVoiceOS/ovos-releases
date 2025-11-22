@@ -45,6 +45,8 @@ jobs:
             -r lists/ww.list \
             -r lists/audio_transf.list \
             -r lists/gui.list \
+            -r lists/keywords.list \
+            -r embeddings.list \
             -c https://raw.githubusercontent.com/OpenVoiceOS/ovos-releases/refs/heads/main/constraints-alpha.txt
 
       - name: Run alpha script
