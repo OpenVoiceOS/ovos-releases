@@ -6,7 +6,7 @@ ovos-tts-plugin-ahotts
 ovos-tts-plugin-cotovia
 ovos-tts-plugin-nos
 ovos-tts-plugin-polly
-ovos-tts-plugin-coqui
+ovos-tts-plugin-coqui; python_version<='3.12'
 ovos-tts-plugin-mimic
 ovos-tts-plugin-google-tx
 ovos-tts-plugin-pico
