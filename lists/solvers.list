@@ -7,3 +7,4 @@ ovos-solver-aiml-plugin
 ovos-solver-rivescript-plugin
 ovos-solver-gguf-plugin
 ovos-flashrank-reranker-plugin
+ovos-ddg-solver-plugin
