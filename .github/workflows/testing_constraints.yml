@@ -43,7 +43,7 @@ jobs:
           -r lists/ww.list \
           -r lists/keywords.list \
           -r lists/audio_transf.list \
-          -r embeddings.list \
+          -r lists/embeddings.list \
           -r lists/gui.list 
 
       - name: Run release script
