@@ -23,6 +23,23 @@ for package in packages:
         print(package)
         alpha_constraints.append(f"{name}>={minver}")
 
+
+# hivemind packages
+pattern = re.compile(r'^(hivemind-[\w-]+)==(\d+)\.(\d+)\.(\d+)(a\d+)?$')
+
+for package in packages:
+    match = pattern.match(package)
+    if match:
+        name, major, minor, patch, alpha = match.groups()
+        minver = f"{major}.{minor}.{patch}"
+        if alpha:
+            minver += f"{alpha}"
+        major = stable_major = int(major)
+        minor = stable_minor = int(minor)
+        patch = int(patch)
+        print(package)
+        alpha_constraints.append(f"{name}>={minver}")
+        
 # Write alpha constraints to respective files
 
 with open('constraints-alpha.txt', 'w') as alpha_file:
