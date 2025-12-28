@@ -2,8 +2,8 @@ import re
 import subprocess
 
 # Run pip list and filter for "ovos-" packages
-result = subprocess.run(['pip', 'list', '--format=freeze'], capture_output=True, text=True)
-packages = result.stdout.splitlines()
+with open('resolved-constraints.txt', 'r') as f:
+    packages = f.readlines()
 
 
 testing_constraints = []
