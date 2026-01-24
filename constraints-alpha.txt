@@ -1,5 +1,5 @@
 ovos-adapt-parser>=1.0.9
-ovos-audio>=1.1.1a1
+ovos-audio>=1.1.1
 ovos-audio-plugin-mpv>=0.2.1
 ovos-audio-plugin-simple>=0.1.4a3
 ovos-audio-transformer-plugin-speechbrain-langdetect>=0.0.0a9
@@ -47,7 +47,7 @@ ovos-openai-plugin>=2.0.7a1
 ovos-padatious>=1.4.4a1
 ovos-persona>=0.7.1
 ovos-phal>=0.2.12a3
-ovos-phal-plugin-alsa>=0.1.6a1
+ovos-phal-plugin-alsa>=0.1.6
 ovos-phal-plugin-connectivity-events>=0.1.4a2
 ovos-phal-plugin-hotkeys>=0.1.1
 ovos-phal-plugin-ipgeo>=0.1.8a1
